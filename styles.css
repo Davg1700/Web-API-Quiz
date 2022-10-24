@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: 1px solid purple;
+}
+
+body{
+    background-color: rgb(40, 62, 55);
+    overflow: hidden;
+}
+
+h1, h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+.outer-container {
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.top-bar p{
+    float: right;
+}
+
+p {
+    color: yellow;
+    font-size: large;
+}
+
+.top-bar button {
+    outline: block;
+    background-color: rgb(156, 174, 16);
+    color: rgb(165, 12, 42);
+    font-size: 1.3em;
+}
+
+li {
+    list-style: none;
+}
+
+.inner-container {
+    background-color: rgb(55, 81, 40);
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quiz-intro, main{
+    display: none;
+    margin-top: 10vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(156, 100, 100);
+}
+
+.quiz-intro p {
+    text-align: center;
+}
+
+.quiz-intro button {
+    display: none;
+    margin: 0 auto;
+    font-size: 1.1em;
+    background-color: salmon;
+}
+
+main {
+    display: block;
+}
+
+.questions {
+    display: none;
+}
+
+.finished-quiz{
+    display: none;
+}
+
+.highscores {
+    display: none;
+    text-align: center  ;
+}
+
+.highscores button{
+    font-size: 1.1em;
+    background-color: salmon;
+}
