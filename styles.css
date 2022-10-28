@@ -79,7 +79,7 @@ main {
 }
 
 .questions {
-    display: none;
+    display: block;
 }
 
 .finished-quiz{
