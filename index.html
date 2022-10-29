@@ -12,23 +12,23 @@
 
         <!--top of section-->
         <div class="top-bar">
-            <button> View Highscores</button>
+            <button id="viewScores" onclick="scores()"> View Highscores</button>
             <p>Timer: 00:00</p>
         </div>
         <!--inner div-->
         <div class="inner-container">
 
             <!--quiz intro-->
-            <header class="quiz-intro">
+            <header class="quiz-intro" id="quizStart">
                 <h1>Welcome to my Quiz</h1>
                 <p>Good luck!</p>
-                <button> Start!</button>
+                <button id="startGame" onclick="start()" > Start!</button>
             </header>
 
             <!--quiz-->
             <main>
 
-                <section class="questions">
+                <section class="questions" id="gameQ">
                     <h2>Questions here</h2>
                     <ul>
                         <li><button id="answer1" >Answer 1</button></li>
@@ -45,18 +45,18 @@
                     <div>
                         <label for="user">Enter Initials</label>
                         <input type="text">
-                        <button>Submit</button>
+                        <button id="submitScore">Submit</button>
                     </div>
                 </section>
                     <!-- highscore page -->
-                <section class="highscores">
+                <section class="highscores" id="highScore">
                     <h2>Highscores</h2>
+                    <input type="text" value="score" id="score" placeholder="enter your initals and score">
+                    <button id="save" onclick="saveScore()">save</button>
                     <ol>
-                        <li>DD - 20</li>
-                        <li>DD - 20</li>
-                        <li>DD - 20</li>
-                        <button>Clear</button>
-                        <button>Go Back</button>
+                        <li id="demo"></li>
+                        <button id="clear" onclick="zero()">Clear</button>
+                        <button id="back" onclick="goBack()">Home</button>
                     </ol>
 
                 </section>
