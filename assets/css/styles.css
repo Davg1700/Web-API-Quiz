@@ -25,9 +25,6 @@ h1, h2 {
     justify-content: start;
 }
 
-.top-bar p{
-    float: right;
-}
 
 p {
     color: yellow;
@@ -78,7 +75,7 @@ main {
     display: block;
 }
 
-.questions {
+.gameQ {
     display: none;
 }
 
@@ -87,7 +84,7 @@ main {
 }
 
 .highscores {
-    display: block;
+    display: none;
     text-align: center  ;
 }
 
